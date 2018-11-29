@@ -1,0 +1,147 @@
+/*base css*/
+html {
+    font-size: 30px;
+    font-family: Arial, "Microsoft YaHei", "\9ED1\4F53", "\5B8B\4F53", sans-serif;
+    margin: 0 auto;
+    padding: 0
+}
+@media (min-width: 320px) and (max-width: 345px) {
+    html {
+        font-size: 17.7778px
+    }
+}
+@media (min-width: 345px) and (max-width: 360px) {
+    html {
+        font-size: 20px
+    }
+}
+@media (min-width: 361px) and (max-width: 375px) {
+    html {
+        font-size: 20.83px
+    }
+}
+@media (min-width: 376px) and (max-width: 420px) {
+    html {
+        font-size: 23px
+    }
+}
+body {
+    background: #ededed;
+    color: #333;
+    font-size: .55rem;
+    padding: 0;
+    margin: 0;
+}
+.main{
+    background-color: #fff;
+    width: 18rem;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+@media (max-width: 524px) {
+    .main{
+        overflow-y: auto;
+        left: 50%;
+        bottom: 0;
+        top: 0;
+        margin-left: -9rem;
+        position: fixed;
+        z-index: 1;
+    }
+}
+h4, p { margin: 0; font-weight: 400}
+em { font-style: normal; color: #F78118}
+a {color: #333; text-decoration: none}
+img { border: none}
+li, ul, dl{
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+.bt-bd{ border-bottom: .5rem #fbfbfb solid}
+/* page */
+.page-contain { background-color: #fff; margin: 0 auto; position: relative}
+.page-contain:last-child { border-bottom: none!important;}
+.page-head { padding: .5rem}
+.page-title { font-size: 0}
+.v-line {
+    background-color: #FFB22D;
+    display: inline-block;
+    width: .15rem;
+    height: 1rem;
+    margin-right: .45rem
+}
+.page-tle, .v-line { display: inline-block; vertical-align: middle}
+.page-tle { margin: 0}
+.a-more {
+    background-size: .9rem;
+    display: inline-block;
+    height: .9rem;
+    line-height: .9rem;
+    font-size: .6rem;
+    float: right;
+    margin-top: .05rem
+}
+.page-body {
+    font-size: 0;
+    overflow: hidden;
+    position: relative;
+}
+.page-inner{
+    font-size: .5rem;
+    height: auto;
+    line-height: 160%;
+    padding: .5rem;
+}
+.page-wrap { position: relative}
+.page-wrap:after {
+    height: 1px;
+    left: 0;
+    bottom: 0
+}
+.pd-top{ padding-top: 2.4rem}
+.i-36 {
+    background-image: url(../images/i_36.png);
+    background-size: 5.9rem 1.9rem;
+    width: .9rem;
+    height: .9rem
+}
+
+.i-48 {
+    background-image: url(../images/index/i_48.png);
+    background-size: 9rem 1.2rem;
+    width: 1.2rem;
+    height: 1.2rem
+}
+
+.i-36, .i-48 {
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -.14rem
+}
+.i-wp {
+    background-position: -3rem 0
+}
+
+.i-order {
+    background-position: -1rem 0
+}
+
+.i-set {
+    background-position: -2.05rem 0
+}
+
+.i-exit {
+    background-position: 0 0
+}
+
+.i-help {
+    background-position: right bottom
+}

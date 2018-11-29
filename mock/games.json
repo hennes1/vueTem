@@ -1,0 +1,675 @@
+[
+  {
+    "category": "hot",
+    "list": [
+      {
+        "id": 100,
+        "face": "../src/images/list/100.png",
+        "name": "妖游记",
+        "description": "野外PK跨服战场帮派攻城",
+        "introduction": "新版仙侠巨作《妖游记》正式来袭！游戏画质精美，玩法多样，100%野外无限PK。 超炫酷的神器、仙宠、坐骑，带你闯荡仙魔世界。随时随地通过实时语音和真实 玩家建立好友、帮派、夫妻、师徒等亲密关系。仙盟争锋强者为王，谁能夺得君 临天下！",
+        "capacity": "117M",
+        "discount": 0.6
+      },
+      {
+        "id": 101,
+        "face": "../src/images/list/101.png",
+        "name": "勇士之轮",
+        "description": "首创打BOSS掉时装3D魔幻",
+        "introduction": "3D魔幻《勇士之轮》正式来袭！游戏画质精美，玩法多样，100%野外无限PK。 超炫酷的神器、仙宠、坐骑，带你闯荡仙魔世界。随时随地通过实时语音和真实 玩家建立好友、帮派、夫妻、师徒等亲密关系。仙盟争锋强者为王，谁能夺得君 临天下！",
+        "capacity": "107M",
+        "discount": 0
+      },
+      {
+        "id": 102,
+        "face": "../src/images/list/102.png",
+        "name": "少女前线",
+        "description": "二次元军武枪娘",
+        "introduction": "二次元《少女前线》正式来袭！游戏画质精美，玩法多样，100%野外无限PK。 超炫酷的神器、仙宠、坐骑，带你闯荡仙魔世界。随时随地通过实时语音和真实 玩家建立好友、帮派、夫妻、师徒等亲密关系。仙盟争锋强者为王，谁能夺得君 临天下！",
+        "capacity": "98M",
+        "discount": 0.6
+      },
+      {
+        "id": 103,
+        "face": "../src/images/list/103.png",
+        "name": "妲己传",
+        "description": "散打哥力荐修仙玄幻网游",
+        "introduction": "修仙玄幻网游《妲己传》正式来袭！游戏画质精美，玩法多样，超炫酷的神器、仙宠、坐骑，带你闯荡仙魔世界。随时随地通过实时语音和真实 玩家建立好友、帮派、夫妻、师徒等亲密关系。仙盟争锋强者为王，谁能夺得君 临天下！",
+        "capacity": "83M",
+        "discount": 0.6
+      },
+      {
+        "id": 104,
+        "face": "../src/images/list/104.png",
+        "name": "笑狂沙",
+        "description": "4K画质3D手游独创双人骑宠",
+        "introduction": "4K画质3D手游《笑狂沙》正式来袭！游戏画质精美，玩法多样，超炫酷的神器、仙宠、坐骑，带你闯荡仙魔世界。随时随地通过实时语音和真实 玩家建立好友、帮派、夫妻、师徒等亲密关系。仙盟争锋强者为王，谁能夺得君 临天下！",
+        "capacity": "67M",
+        "discount": 0.6
+      },
+      {
+        "id": 104,
+        "face": "../src/images/list/105.png",
+        "name": "诛剑奇侠传",
+        "description": "御剑行天下飞仙谁与同",
+        "introduction": "御剑行天下飞仙《诛剑奇侠传》正式来袭！游戏画质精美，玩法多样，御剑行天下飞仙谁与同。 超炫酷的神器、仙宠、坐骑，带你闯荡仙魔世界。随时随地通过实时语音和真实 玩家建立好友、帮派、夫妻、师徒等亲密关系。仙盟争锋强者为王，谁能夺得君 临天下！",
+        "capacity": "91M",
+        "discount": 0.6
+      },
+      {
+        "id": 106,
+        "face": "../src/images/list/106.png",
+        "name": "雄霸天下",
+        "description": "正版授权传奇",
+        "introduction": "《雄霸天下》正式来袭！游戏画质精美，玩法多样。 超炫酷的神器、仙宠、坐骑，带你闯荡仙魔世界。随时随地通过实时语音和真实 玩家建立好友、帮派、夫妻、师徒等亲密关系。仙盟争锋强者为王，谁能夺得君 临天下！",
+        "capacity": "176M",
+        "discount": 0.6
+      },
+      {
+        "id": 107,
+        "face": "../src/images/list/107.png",
+        "name": "足球大师黄金一代",
+        "description": "满满足球回忆",
+        "introduction": "《足球大师黄金一代》正式来袭！游戏画质精美，玩法多样。 超炫酷的神器、仙宠、坐骑，带你闯荡仙魔世界。随时随地通过实时语音和真实 玩家建立好友、帮派、夫妻、师徒等亲密关系。仙盟争锋强者为王，谁能夺得君 临天下！",
+        "capacity": "193M",
+        "discount": 0
+      },
+      {
+        "id": 108,
+        "face": "../src/images/list/108.jpg",
+        "name": "大武将",
+        "description": "卡牌策略乱世崩塌杀出奇葩",
+        "introduction": "卡牌策略《大武将》正式来袭！游戏画质精美，玩法多样，超炫酷的神器、仙宠、坐骑，带你闯荡仙魔世界。随时随地通过实时语音和真实 玩家建立好友、帮派、夫妻、师徒等亲密关系。仙盟争锋强者为王，谁能夺得君 临天下！",
+        "capacity": "127M",
+        "discount": 0.6
+      },
+      {
+        "id": 109,
+        "face": "../src/images/list/109.png",
+        "name": "星座联萌",
+        "description": "首款直播手游美女深夜福利",
+        "introduction": "",
+        "capacity": "77M",
+        "discount": 0.6
+      },
+      {
+        "id": 110,
+        "face": "../src/images/list/110.png",
+        "name": "狂怒",
+        "description": "实时全3D战车射击手游",
+        "introduction": "",
+        "capacity": "73M",
+        "discount": 0.6
+      },
+      {
+        "id": 111,
+        "face": "../src/images/list/111.jpg",
+        "name": "西游诛妖录",
+        "description": "是一款策略卡牌手游",
+        "introduction": "",
+        "capacity": "64M",
+        "discount": 0.6
+      },
+      {
+        "id": 507,
+        "face": "../src/images/list/507.png",
+        "name": "如果的世界",
+        "description": "动漫回合协力冒险",
+        "introduction": "",
+        "capacity": "70M",
+        "discount": 0.6
+      },
+      {
+        "id": 508,
+        "face": "../src/images/list/508.png",
+        "name": "兵临三国",
+        "description": "",
+        "introduction": "",
+        "capacity": "225M",
+        "discount": 0.6
+      },
+      {
+        "id": 509,
+        "face": "../src/images/list/509.png",
+        "name": "梦梦爱三国",
+        "description": "梦三传承经典重现",
+        "introduction": "",
+        "capacity": "121M",
+        "discount": 0.6
+      },
+      {
+        "id": 510,
+        "face": "../src/images/list/510.png",
+        "name": "超级地城之光",
+        "description": "超级暗黑风格",
+        "introduction": "",
+        "capacity": "102M",
+        "discount": 0.6
+      },
+      {
+        "id": 511,
+        "face": "../src/images/list/511.png",
+        "name": "暗黑黎明2",
+        "description": "周年庆-从1开始从心出发",
+        "introduction": "",
+        "capacity": "110M",
+        "discount": 0.6
+      },
+      {
+        "id": 512,
+        "face": "../src/images/list/512.png",
+        "name": "机甲无双",
+        "description": "全天候国战",
+        "introduction": "",
+        "capacity": "88M",
+        "discount": 0
+      },
+      {
+        "id": 513,
+        "face": "../src/images/list/513.png",
+        "name": "超能复仇者",
+        "description": "“超级盟”",
+        "introduction": "",
+        "capacity": "138M",
+        "discount": 0.6
+      },
+      {
+        "id": 514,
+        "face": "../src/images/list/514.png",
+        "name": "童话三国志",
+        "description": "穿越古今谱写传奇",
+        "introduction": "",
+        "capacity": "124M",
+        "discount": 0.6
+      }
+    ]
+  },
+  {
+    "category": "new",
+    "list": [
+      {
+        "id": 200,
+        "face": "../src/images/list/200.png",
+        "name": "阿优大冒险",
+        "description": "国内动漫大IP改编横版动作冒",
+        "introduction": "",
+        "capacity": "119M",
+        "discount": 0.6
+      },
+      {
+        "id": 201,
+        "face": "../src/images/list/201.png",
+        "name": "狂刃",
+        "description": "流星蝴蝶亮古剑逆水寒江畅奇",
+        "introduction": "",
+        "capacity": "199M",
+        "discount": 0.6
+      },
+      {
+        "id": 202,
+        "face": "../src/images/list/202.png",
+        "name": "斗仙诀",
+        "description": "仙侠世界等你来战",
+        "introduction": "",
+        "capacity": "117M",
+        "discount": 0
+      },
+      {
+        "id": 203,
+        "face": "../src/images/list/203.png",
+        "name": "笑狂沙",
+        "description": "4K画质3D手游独创双人骑宠",
+        "introduction": "",
+        "capacity": "180M",
+        "discount": 0
+      },
+      {
+        "id": 204,
+        "face": "../src/images/list/204.png",
+        "name": "魔戒战争",
+        "description": "魔戒重现战火不息",
+        "introduction": "",
+        "capacity": "79M",
+        "discount": 0
+      },
+      {
+        "id": 205,
+        "face": "../src/images/list/205.png",
+        "name": "诛剑奇侠传",
+        "description": "御剑行天下飞仙谁与同",
+        "introduction": "",
+        "capacity": "76M",
+        "discount": 0
+      },
+      {
+        "id": 206,
+        "face": "../src/images/list/206.png",
+        "name": "战神",
+        "description": "三国少女组合等你来撩",
+        "introduction": "",
+        "capacity": "88M",
+        "discount": 0.6
+      },
+      {
+        "id": 207,
+        "face": "../src/images/list/207.jpg",
+        "name": "新三国魂",
+        "description": "你的天下你做主",
+        "introduction": "",
+        "capacity": "67M",
+        "discount": 0.6
+      },
+      {
+        "id": 208,
+        "face": "../src/images/list/208.png",
+        "name": "妲己传",
+        "description": "散打哥力荐修仙玄幻网游",
+        "introduction": "",
+        "capacity": "321M",
+        "discount": 0.6
+      },
+      {
+        "id": 209,
+        "face": "../src/images/list/209.png",
+        "name": "雄霸天下",
+        "description": "正版授权传奇",
+        "introduction": "",
+        "capacity": "79M",
+        "discount": 0.6
+      },
+      {
+        "id": 210,
+        "face": "../src/images/list/210.png",
+        "name": "仲裁之刃",
+        "description": "无国界3V3泛操作竞技手游",
+        "introduction": "",
+        "capacity": "65M",
+        "discount": 0
+      },
+      {
+        "id": 211,
+        "face": "../src/images/list/211.png",
+        "name": "封龙战纪",
+        "description": "一款大型多人在线游戏",
+        "introduction": "",
+        "capacity": "91M",
+        "discount": 0.6
+      },
+      {
+        "id": 212,
+        "face": "../src/images/list/212.png",
+        "name": "布武天下",
+        "description": "御将星霸乱世",
+        "introduction": "",
+        "capacity": "74M",
+        "discount": 0
+      },
+      {
+        "id": 213,
+        "face": "../src/images/list/213.png",
+        "name": "女神新纪元",
+        "description": "精美绝伦的次时代美少女游戏",
+        "introduction": "",
+        "capacity": "91M",
+        "discount": 0
+      },
+      {
+        "id": 214,
+        "face": "../src/images/list/214.png",
+        "name": "造梦西游4",
+        "description": "疯狂连击演绎西游降魔之路",
+        "introduction": "",
+        "capacity": "116M",
+        "discount": 0
+      }
+    ]
+  },
+  {
+    "category": "trend",
+    "list": [
+      {
+        "id": 300,
+        "face": "../src/images/list/300.png",
+        "name": "阴阳界",
+        "description": "经典回合对战感受战斗乐趣",
+        "introduction": "",
+        "capacity": "203M",
+        "discount": 0.6
+      },
+      {
+        "id": 301,
+        "face": "../src/images/list/301.png",
+        "name": "武娘",
+        "description": "方文山推荐中华风武侠",
+        "introduction": "",
+        "capacity": "129M",
+        "discount": 0
+      },
+      {
+        "id": 302,
+        "face": "../src/images/list/302.png",
+        "name": "天堂2：血盟",
+        "description": "超燃万人血盟阵营站震撼开启",
+        "introduction": "",
+        "capacity": "220M",
+        "discount": 0
+      },
+      {
+        "id": 303,
+        "face": "../src/images/list/303.png",
+        "name": "永恒之歌",
+        "description": "3D幻想MMORPG",
+        "introduction": "",
+        "capacity": "110M",
+        "discount": 0
+      },
+      {
+        "id": 304,
+        "face": "../src/images/list/304.png",
+        "name": "犬夜叉",
+        "description": "重返战国时代",
+        "introduction": "",
+        "capacity": "95M",
+        "discount": 0
+      },
+      {
+        "id": 305,
+        "face": "../src/images/list/305.png",
+        "name": "风之旅团",
+        "description": "期待如约而至的你们",
+        "introduction": "",
+        "capacity": "87M",
+        "discount": 0
+      }
+    ]
+  },
+  {
+    "category": "standalone",
+    "list": [
+      {
+        "id": 400,
+        "face": "../src/images/list/400.jpg",
+        "name": "清宫Q传",
+        "description": "小清新2048",
+        "introduction": "",
+        "capacity": "76M",
+        "discount": 0
+      },
+      {
+        "id": 401,
+        "face": "../src/images/list/401.png",
+        "name": "冲破天际线",
+        "description": "国内首款反重力赛车手游",
+        "introduction": "",
+        "capacity": "130M",
+        "discount": 0.9
+      },
+      {
+        "id": 402,
+        "face": "../src/images/list/402.png",
+        "name": "我为车狂",
+        "description": "爆笑都市赛车-全明星阵容打造",
+        "introduction": "",
+        "capacity": "126M",
+        "discount": 0
+      },
+      {
+        "id": 403,
+        "face": "../src/images/list/403.png",
+        "name": "斗罗大陆3龙王传说单机版",
+        "description": "唐家三少授权斗罗3单机手游",
+        "introduction": "",
+        "capacity": "211M",
+        "discount": 0
+      },
+      {
+        "id": 404,
+        "face": "../src/images/list/404.png",
+        "name": "快乐点点消",
+        "description": "谁玩谁快乐",
+        "introduction": "",
+        "capacity": "121M",
+        "discount": 0.9
+      },
+      {
+        "id": 405,
+        "face": "../src/images/list/405.png",
+        "name": "特技飞车",
+        "description": "百种战车风驰电掣变身坦克",
+        "introduction": "",
+        "capacity": "111M",
+        "discount": 0.9
+      },
+      {
+        "id": 406,
+        "face": "../src/images/list/406.png",
+        "name": "星星祖玛",
+        "description": "萌系到底",
+        "introduction": "",
+        "capacity": "89M",
+        "discount": 0.9
+      },
+      {
+        "id": 407,
+        "face": "../src/images/list/407.png",
+        "name": "变形金刚:地球之战",
+        "description": "变形金刚重磅登场",
+        "introduction": "",
+        "capacity": "110M",
+        "discount": 0
+      }
+    ]
+  },
+  {
+    "category": "recharge",
+    "list": [
+      {
+        "id": 500,
+        "face": "../src/images/list/500.png",
+        "name": "主公受惊了",
+        "description": "重新定义国战",
+        "introduction": "",
+        "capacity": "123M",
+        "discount": 0.7
+      },
+      {
+        "id": 501,
+        "face": "../src/images/list/501.png",
+        "name": "火影忍者-忍者大师",
+        "description": "正版授权",
+        "introduction": "",
+        "capacity": "76M",
+        "discount": 0
+      },
+      {
+        "id": 502,
+        "face": "../src/images/list/502.png",
+        "name": "口袋兽人",
+        "description": "艾泽拉斯光辉",
+        "introduction": "",
+        "capacity": "45M",
+        "discount": 0.7
+      },
+      {
+        "id": 503,
+        "face": "../src/images/list/503.png",
+        "name": "太极熊猫2",
+        "description": "神魔之魂震撼开启",
+        "introduction": "",
+        "capacity": "110M",
+        "discount": 0
+      },
+      {
+        "id": 504,
+        "face": "../src/images/list/504.png",
+        "name": "新大主宰",
+        "description": "天蚕土豆正版",
+        "introduction": "",
+        "capacity": "110M",
+        "discount": 0.6
+      },
+      {
+        "id": 505,
+        "face": "../src/images/list/505.jpg",
+        "name": "新仙剑奇侠传",
+        "description": "幻璃镜联动新版",
+        "introduction": "",
+        "capacity": "100M",
+        "discount": 0
+      },
+      {
+        "id": 506,
+        "face": "../src/images/list/506.png",
+        "name": "血族",
+        "description": "激萌萝莉傲娇御姐血族等你",
+        "introduction": "",
+        "capacity": "98M",
+        "discount": 0
+      },
+      {
+        "id": 507,
+        "face": "../src/images/list/507.png",
+        "name": "如果的世界",
+        "description": "动漫回合协力冒险",
+        "introduction": "",
+        "capacity": "70M",
+        "discount": 0.6
+      },
+      {
+        "id": 508,
+        "face": "../src/images/list/508.png",
+        "name": "兵临三国",
+        "description": "",
+        "introduction": "",
+        "capacity": "225M",
+        "discount": 0.6
+      },
+      {
+        "id": 509,
+        "face": "../src/images/list/509.png",
+        "name": "梦梦爱三国",
+        "description": "梦三传承经典重现",
+        "introduction": "",
+        "capacity": "121M",
+        "discount": 0.6
+      },
+      {
+        "id": 510,
+        "face": "../src/images/list/510.png",
+        "name": "超级地城之光",
+        "description": "超级暗黑风格",
+        "introduction": "",
+        "capacity": "102M",
+        "discount": 0.6
+      },
+      {
+        "id": 511,
+        "face": "../src/images/list/511.png",
+        "name": "暗黑黎明2",
+        "description": "周年庆-从1开始从心出发",
+        "introduction": "",
+        "capacity": "110M",
+        "discount": 0.6
+      },
+      {
+        "id": 512,
+        "face": "../src/images/list/512.png",
+        "name": "机甲无双",
+        "description": "全天候国战",
+        "introduction": "",
+        "capacity": "88M",
+        "discount": 0
+      },
+      {
+        "id": 513,
+        "face": "../src/images/list/513.png",
+        "name": "超能复仇者",
+        "description": "“超级盟”",
+        "introduction": "",
+        "capacity": "138M",
+        "discount": 0.6
+      },
+      {
+        "id": 514,
+        "face": "../src/images/list/514.png",
+        "name": "童话三国志",
+        "description": "穿越古今谱写传奇",
+        "introduction": "",
+        "capacity": "124M",
+        "discount": 0.6
+      },
+      {
+        "id": 100,
+        "face": "../src/images/list/100.png",
+        "name": "妖游记",
+        "description": "野外PK跨服战场帮派攻城",
+        "introduction": "新版仙侠巨作《妖游记》正式来袭！游戏画质精美，玩法多样，100%野外无限PK。 超炫酷的神器、仙宠、坐骑，带你闯荡仙魔世界。随时随地通过实时语音和真实 玩家建立好友、帮派、夫妻、师徒等亲密关系。仙盟争锋强者为王，谁能夺得君 临天下！",
+        "capacity": "117M",
+        "discount": 0.6
+      },
+      {
+        "id": 101,
+        "face": "../src/images/list/101.png",
+        "name": "勇士之轮",
+        "description": "首创打BOSS掉时装3D魔幻",
+        "introduction": "3D魔幻《勇士之轮》正式来袭！游戏画质精美，玩法多样，100%野外无限PK。 超炫酷的神器、仙宠、坐骑，带你闯荡仙魔世界。随时随地通过实时语音和真实 玩家建立好友、帮派、夫妻、师徒等亲密关系。仙盟争锋强者为王，谁能夺得君 临天下！",
+        "capacity": "107M",
+        "discount": 0
+      },
+      {
+        "id": 102,
+        "face": "../src/images/list/102.png",
+        "name": "少女前线",
+        "description": "二次元军武枪娘",
+        "introduction": "二次元《少女前线》正式来袭！游戏画质精美，玩法多样，100%野外无限PK。 超炫酷的神器、仙宠、坐骑，带你闯荡仙魔世界。随时随地通过实时语音和真实 玩家建立好友、帮派、夫妻、师徒等亲密关系。仙盟争锋强者为王，谁能夺得君 临天下！",
+        "capacity": "98M",
+        "discount": 0.6
+      },
+      {
+        "id": 103,
+        "face": "../src/images/list/103.png",
+        "name": "妲己传",
+        "description": "散打哥力荐修仙玄幻网游",
+        "introduction": "修仙玄幻网游《妲己传》正式来袭！游戏画质精美，玩法多样，超炫酷的神器、仙宠、坐骑，带你闯荡仙魔世界。随时随地通过实时语音和真实 玩家建立好友、帮派、夫妻、师徒等亲密关系。仙盟争锋强者为王，谁能夺得君 临天下！",
+        "capacity": "83M",
+        "discount": 0.6
+      },
+      {
+        "id": 104,
+        "face": "../src/images/list/104.png",
+        "name": "笑狂沙",
+        "description": "4K画质3D手游独创双人骑宠",
+        "introduction": "4K画质3D手游《笑狂沙》正式来袭！游戏画质精美，玩法多样，超炫酷的神器、仙宠、坐骑，带你闯荡仙魔世界。随时随地通过实时语音和真实 玩家建立好友、帮派、夫妻、师徒等亲密关系。仙盟争锋强者为王，谁能夺得君 临天下！",
+        "capacity": "67M",
+        "discount": 0.6
+      },
+      {
+        "id": 104,
+        "face": "../src/images/list/105.png",
+        "name": "诛剑奇侠传",
+        "description": "御剑行天下飞仙谁与同",
+        "introduction": "御剑行天下飞仙《诛剑奇侠传》正式来袭！游戏画质精美，玩法多样，御剑行天下飞仙谁与同。 超炫酷的神器、仙宠、坐骑，带你闯荡仙魔世界。随时随地通过实时语音和真实 玩家建立好友、帮派、夫妻、师徒等亲密关系。仙盟争锋强者为王，谁能夺得君 临天下！",
+        "capacity": "91M",
+        "discount": 0.6
+      },
+      {
+        "id": 106,
+        "face": "../src/images/list/106.png",
+        "name": "雄霸天下",
+        "description": "正版授权传奇",
+        "introduction": "《雄霸天下》正式来袭！游戏画质精美，玩法多样。 超炫酷的神器、仙宠、坐骑，带你闯荡仙魔世界。随时随地通过实时语音和真实 玩家建立好友、帮派、夫妻、师徒等亲密关系。仙盟争锋强者为王，谁能夺得君 临天下！",
+        "capacity": "176M",
+        "discount": 0.6
+      },
+      {
+        "id": 107,
+        "face": "../src/images/list/107.png",
+        "name": "足球大师黄金一代",
+        "description": "满满足球回忆",
+        "introduction": "《足球大师黄金一代》正式来袭！游戏画质精美，玩法多样。 超炫酷的神器、仙宠、坐骑，带你闯荡仙魔世界。随时随地通过实时语音和真实 玩家建立好友、帮派、夫妻、师徒等亲密关系。仙盟争锋强者为王，谁能夺得君 临天下！",
+        "capacity": "193M",
+        "discount": 0
+      }
+    ]
+  }
+]
