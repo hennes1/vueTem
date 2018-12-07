@@ -81,6 +81,7 @@
                 this.isOpen = false;
                 this.isLogin = 0;
                 localStorage.setItem('isLogin', '0');
+                localStorage.removeItem('currUser');
             }
         },
         computed: {

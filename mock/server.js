@@ -26,7 +26,7 @@ http.createServer((req, res) => {
     res.setHeader("Access-Control-Allow-Headers", "Content-Type,Content-Length,Authorization,Accept,X-Requested-With");
     res.setHeader("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
     res.setHeader("X-Powered-By", ' 3.2.1');
-    if(req.method == 'OPTIONS') return res.end(); // 让options请求快速返回
+    if(req.method === 'OPTIONS') return res.end(); // 让options请求快速返回
 
     let {pathname, query} = url.parse(req.url, true); // true：把query转成对象
 
@@ -42,7 +42,7 @@ http.createServer((req, res) => {
         if(gameCategory){
             if(req.method === 'GET'){
                 readGame(function (games) {
-                    let gameList = games.find(item => item.category == gameCategory);
+                    let gameList = games.find(item => item.category === gameCategory);
                     res.setHeader('Content-type', 'application/json;charset=utf-8');
                     res.end(JSON.stringify(gameList.list));
                 });
@@ -63,7 +63,7 @@ http.createServer((req, res) => {
         if(gameCategory){
             if(req.method === 'GET'){
                 readGame(function (games) {
-                    let gameList = games.find(item => item.category == gameCategory);
+                    let gameList = games.find(item => item.category === gameCategory);
                     let someGame = (gameList.list).find(val => val.id === id);
                     res.setHeader('Content-type', 'application/json;charset=utf-8');
                     res.end(JSON.stringify(someGame));
@@ -77,7 +77,7 @@ http.createServer((req, res) => {
         let offset = parseInt(query.offset) || 0;
         let gameCategory = query.category;
         readGame(function (games) {
-            let gameList = games.find(item => item.category == gameCategory);
+            let gameList = games.find(item => item.category === gameCategory);
             // 每次在偏移量`offset`的基础上加`pageSize`条
             let result = gameList.list.slice(offset, offset + pageSize);
             let hasMore = true; // 默认有加载更多

@@ -1,5 +1,5 @@
 <template>
-    <div class="index-contain" v-title="首页">
+    <div class="index-contain" v-title="title">
         <Loading v-if="loading"></Loading>
         <template v-else>
             <div class="swiper-main">
@@ -55,7 +55,7 @@
 
     export default {
         data() {
-            return {games: [], sliders: [], loading: true}
+            return {games: [], sliders: [], loading: true, title: '首页'}
         },
         created() {
             /*this.getSlides();

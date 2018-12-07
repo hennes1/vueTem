@@ -107,14 +107,14 @@ li, ul, dl{
 }
 .pd-top{ padding-top: 2.4rem}
 .i-36 {
-    background-image: url(../images/i_36.png);
+    background-image: url(../assets/i_36.png);
     background-size: 5.9rem 1.9rem;
     width: .9rem;
     height: .9rem
 }
 
 .i-48 {
-    background-image: url(../images/index/i_48.png);
+    background-image: url(../assets/i_48.png);
     background-size: 9rem 1.2rem;
     width: 1.2rem;
     height: 1.2rem

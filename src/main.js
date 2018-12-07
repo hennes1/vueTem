@@ -7,26 +7,24 @@ import './utils/pageFit';
 import VueScroller from 'vue-scroller'
 Vue.use(VueScroller);
 
+import errImg from './assets/error.gif';
+import loadImg from './assets/loading.gif';
 import VueLazyload from 'vue-lazyload';
 Vue.use(VueLazyload, {
-    preLoad: 1.3,
-    error: './src/images/error.gif',
-    loading: './src/images/loading.gif',
-    attempt: 1
+	preLoad: 1.3,
+	error: errImg,
+	loading: loadImg,
+	attempt: 1
 });
 
 import VueAwesomeSwiper from 'vue-awesome-swiper';
 Vue.use(VueAwesomeSwiper);
 
-// 在进入路由前，每次执行的方法
-/*router.beforeEach(function (to, from, next) {
-    document.title = to.meta.title;
-    console.log(to);
-    next();
-});*/
+import layerRegistry from './utils/layer';
+Vue.use(layerRegistry);
 
 new Vue({
-    router,
-    el: '#app',
-    render: (h) => h(App)
+	router,
+	el: '#app',
+	render: (h) => h(App)
 });

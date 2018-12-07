@@ -1,5 +1,5 @@
 <template>
-    <div class="category-contain pd-top" v-title="登录/注册">
+    <div class="category-contain pd-top" v-title="title">
         <div class="page-contain">
             <div class="page-body">
                 <h5 class="form-tle">登录/注册</h5>
@@ -17,14 +17,15 @@
                 </div>
             </div>
         </div>
+        <!--/ login panel end -->
     </div>
 </template>
 
 <script>
-
     export default {
         data() {
             return {
+            	title: '登录/注册',
                 user: [],
                 isLogin: parseInt(localStorage.getItem('isLogin')) || 0,
                 userStorage: JSON.parse(localStorage.getItem('userLogin')) || null
@@ -32,19 +33,24 @@
         },
         methods: {
             checkForm(e){
+                let phoneIpt = document.getElementById('user_name'), pwdIpt = document.getElementById('user_pwd');
                 let name = this.user.name, pwd = this.user.pwd;
                 if(!name){
-                    console.log('请输入手机号');
+                    this.$Layer('请输入手机号');
+                    phoneIpt.focus();
                     return false;
                 }else if(!this.validPhone(name)){
-                    console.log('请输入正确的手机号');
+                    this.$Layer('请输入正确的手机号');
+                    phoneIpt.focus();
                     return false;
                 }
                 if(!pwd){
-                    console.log('请输入用户密码');
+                    this.$Layer('请输入用户密码');
+                    pwdIpt.focus();
                     return false;
                 }else if(!this.validChart(pwd)){
-                    console.log('密码格式：数字，字母或下划线的组合');
+                    this.$Layer('密码格式：数字+字母，数字+特殊字符，字母+特殊字符，数字+字母+特殊字符', 3000);
+                    pwdIpt.focus();
                     return false;
                 }
 
@@ -52,10 +58,15 @@
                 if(this.userStorage){
                     let that = this;
                     let isStorage = that.userStorage.some(item => item.name === userJson.name && item.pwd === userJson.pwd);
+                    let isSameName = that.userStorage.some(item => item.name === userJson.name && item.pwd !== userJson.pwd);
                     if(isStorage){
-                        console.log('成功登录');
+                        this.$Layer('成功登录');
                     }else{
-                        console.log('注册成功并登录');
+                        if(isSameName){
+                            this.$Layer('该账号已注册过');
+                            return false;
+                        }
+                        this.$Layer('注册成功并登录');
                         that.userStorage.push(userJson);
                         localStorage.setItem('userLogin', JSON.stringify(that.userStorage));
                     }
@@ -64,7 +75,7 @@
                     localStorage.setItem('currUser', userJson.name);
                     that.$router.go(-1);
                 }else{
-                    console.log('注册成功并登录');
+                    this.$Layer('注册成功并登录');
                     this.user.push(userJson);
                     localStorage.setItem('userLogin', JSON.stringify(this.user));
                     this.isLogin = 1;
