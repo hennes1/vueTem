@@ -1,6 +1,6 @@
 <template>
     <div class="index-contain" v-title="title">
-        <Loading v-if="loading"></Loading>
+		<Loading v-if="loading"></Loading>
         <template v-else>
             <div class="swiper-main">
                 <Swiper :swiperSlides="sliders"></Swiper>
@@ -47,7 +47,6 @@
     import Swiper from '../base/Swiper.vue';
     import NoticeSwiper from '../base/noticeSwiper.vue';
     import Loading from '../base/Loading.vue';
-    import { fnShowLoading } from '../api';
     import { setCategory } from '../utils/util';
 
     import '../css/home.css';
@@ -55,31 +54,33 @@
 
     export default {
         data() {
-            return {games: [], sliders: [], loading: true, title: '首页'}
+            return {title: '首页', games: [], sliders: [], loading: true}
         },
         created() {
-            /*this.getSlides();
-            this.getCategoryGames();*/
-            this.showLoading();
+            this.getSlides();
+            this.getCategoryGames();
         },
         methods: {
             categoryName(val){ // 通过category来定义对应的中文名
                 return setCategory(val);
             },
-            async showLoading(){
-                let [sliders, games] = await fnShowLoading();
-                this.sliders = sliders;
-                this.games = games;
-
-                // 加载成功后移除loading
-                this.loading = false;
+            getSlides(){ // 轮播图
+				this.$http.get('/api/slide').then((response) => {
+					response = response.body;
+					if(response) {
+						this.loading = false;
+						this.sliders = response;
+					}
+				}).catch((response) => {
+					console.log(response);
+				});
             },
-            /*async getSlides(){ // 轮播图
-                this.sliders = await fnGetSlides();
+            getCategoryGames(){ // 所有游戏
+				this.$http.get('/api/games').then((response) => {
+					response = response.body;
+					this.games = response;
+				});
             },
-            async getCategoryGames(){ // 所有游戏
-                this.games = await fnGetCategoryGames();
-            },*/
             readNum(source, num){ // 从source中读取num条数据
                 return source.slice(0, num);
             }

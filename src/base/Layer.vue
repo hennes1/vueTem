@@ -11,7 +11,7 @@
         font-size: .8rem;
         position: fixed;
         left: 50%;
-        bottom: 30%;
+        top: 50%;
         transform: translate(-50%, -50%);
         z-index: 9;
     }

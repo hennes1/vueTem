@@ -3,8 +3,7 @@
         <Header>{{categoryZHName}}</Header>
         <div class="page-contain">
             <div class="page-body">
-                <scroller class="page-wrap" :on-infinite="infinite" ref="scroll">
-                    <div style="height:1px"></div>
+                <div class="page-wrap">
                     <ul>
                         <li v-for="(game, index) in games">
                             <router-link  class="a-game"
@@ -16,16 +15,15 @@
                             </router-link>
                         </li>
                     </ul>
-                </scroller>
+                </div>
             </div>
-            <div class="moreBtn" @click="more" v-show="!isLoading">加载更多</div>
+            <div class="moreBtn" @click="moreGame" v-show="hasMore">加载更多</div>
         </div>
     </div>
 </template>
 
 <script>
     import Header from '../base/Header.vue';
-    import {fnLoadMore} from '../api';
     import {setCategory} from '../utils/util';
     import '../css/home.css';
 
@@ -39,48 +37,44 @@
             }
         },
         created() {
-            //this.getCategoryGames();
-            this.loadMore();
-        },
-        mounted(){
-            this.bottom = 20;
+            this.moreGame();
         },
         methods: {
-            /*async getCategoryGames(){
-                let games = await fnGetCategoryGames(this.categoryName);
-                console.log(games);
-                this.games = games;
-            },*/
-            more() {
-                this.loadMore(); // 点击加载更多
+            getCategoryGames(){ // 一次加载项目内全部数据
+				this.$http.get('/api/games', {
+					params: {
+						category: this.categoryName
+					}
+				}).then((response) => {
+					response = response.body;
+					this.games = response;
+				}).catch((response) => {
+					console.log(response);
+				});
             },
-            async loadMore() { // 加载更多
-                if (this.hasMore && !this.isLoading) {
-                    this.isLoading = true;
-                    let {games, hasMore} = await fnLoadMore(this.categoryName, this.offset);
-                    this.hasMore = hasMore;
-                    this.isLoading = false;
-                    this.games = [...this.games, ...games];
-                    this.offset = this.games.length;
-                } else {
-                    this.isLoading = true;
-                }
-            },
-            infinite(done){
-                if (this.bottom >= 30) {
-                    setTimeout(() => {
-                        done(true);
-                    }, 1500);
-                    return;
-                }
-                setTimeout(() => {
-                    this.bottom = this.bottom + 10;
-                    setTimeout(() => {
-                        this.loadMore();
-                        done();
-                    });
-                }, 1500);
-            }
+			moreGame(){ // 每次加载`pageSize`条数据
+				if (this.hasMore && !this.isLoading) {
+					this.isLoading = true;
+					this.$http.get('/api/page', {
+						params: {
+							category: this.categoryName,
+							offset: this.offset
+						}
+					}).then((response) => {
+						response = response.body;
+						let {games, hasMore} = response;
+						this.hasMore = hasMore;
+						//console.log('TS: ' + hasMore);
+						this.isLoading = false;
+						this.games = [...this.games, ...games];
+						this.offset = this.games.length;
+					}).catch((response) => {
+						console.log(response);
+					});
+				} else {
+					this.isLoading = true;
+				}
+			}
         },
         computed: {
             categoryName() {
@@ -96,10 +90,8 @@
 </script>
 
 <style scoped>
-    .page-contain {
-        margin-bottom: 0
-    }
-    .category-contain, .page-contain, .page-body, .page-wrap{ height: 100%}
+    .page-contain { margin-bottom: 0}
+    /*.category-contain, .page-contain, .page-body, .page-wrap{ height: 100%}*/
     .loading-layer{
         height: 2.4rem!important;
         line-height: 2.4rem!important;
@@ -111,6 +103,6 @@
         text-align: center;
         font-size: 18px;
         padding: 10px 0;
-        margin: 0 10px 10px;
+        margin: 10px;
     }
 </style>

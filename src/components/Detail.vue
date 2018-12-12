@@ -57,7 +57,6 @@
     import Header from '../base/Header.vue';
     import RechargeTx from '../base/RechargeTx.vue';
     import TicketsTx from '../base/TicketsTx.vue';
-    import { fnGetGame } from '../api';
 
     export default {
         data() {
@@ -104,8 +103,18 @@
                     }
                 }
             },
-            async getGame(){ // 得到某个游戏
-                this.game = await fnGetGame(this.category, this.gameId);
+            getGame(){ // 得到某个游戏
+				this.$http.get('/api/detail', {
+					params: {
+						category: this.category,
+						id: this.gameId
+					}
+				}).then((response) => {
+					response = response.body;
+					this.game = response;
+				}).catch((response) => {
+					console.log(response);
+				});
             },
             moneyTotal(discount){ // 按折扣计算价格
                 let myArr = this.moneyArr;

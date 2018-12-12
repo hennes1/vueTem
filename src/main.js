@@ -1,18 +1,18 @@
 import './css/base.css';
 import Vue from 'vue';
 import App from './App.vue';
-import router from './router'
+import router from './router';
 import './directive';
 import './utils/pageFit';
-import VueScroller from 'vue-scroller'
+import VueScroller from 'vue-scroller';
 Vue.use(VueScroller);
 
-import errImg from './assets/error.gif';
-import loadImg from './assets/loading.gif';
 import VueLazyload from 'vue-lazyload';
+import errorImg from './assets/error.gif';
+import loadImg from './assets/loading.gif';
 Vue.use(VueLazyload, {
 	preLoad: 1.3,
-	error: errImg,
+	error: errorImg,
 	loading: loadImg,
 	attempt: 1
 });
