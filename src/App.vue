@@ -1,5 +1,5 @@
 <template>
-	<div class="main">
+	<div class="main" id="scroll_main">
 		<keep-alive>
 			<router-view v-if="$route.meta.keepAlive"></router-view>
 		</keep-alive>

@@ -1,5 +1,5 @@
 <template>
-    <div id="notice-cont">
+    <div class="notice-cont">
         <swiper :options="swiperOption" class="notice-swiper">
             <swiper-slide v-for="(notice, index) in noticeSlides" :key="index" v-text="notice"></swiper-slide>
             <div class="swiper-pagination" slot="pagination"></div>
@@ -10,6 +10,7 @@
 <script>
     export default {
         name: 'noticeCarousel',
+		props: ['noticeSlides'],
         data() {
             return {
                 swiperOption: {
@@ -21,20 +22,15 @@
                     pagination: {
                         el: '.swiper-pagination'
                     }
-                },
-                noticeSlides: [
-                    '平台游戏下架通知',
-                    '双十一来临，你的钱包准备好了吗？',
-                    'VUE的确是一个不错的框架，很强大！',
-                    '用Swiper做文字滚动看行不行？'
-                ]
+                }
             }
         }
     }
 </script>
-<style scoped>
-    #notice-cont {
-        height: 2rem;
+<style scoped lang="less">
+	@height: 2rem;
+    .notice-cont {
+        height: @height;
         margin-left: auto;
         margin-right: auto;
         position: relative;
@@ -49,13 +45,13 @@
     }
     .notice-swiper {
         width: 100%;
-        height: 2rem;
+        height: @height;
         position: relative
     }
     .notice-swiper .swiper-slide {
         width: 100%;
-        height: 2rem;
-        line-height: 2rem;
+        height: @height;
+        line-height: @height;
         white-space: nowrap;
         text-overflow: ellipsis;
         font-size: .7rem;

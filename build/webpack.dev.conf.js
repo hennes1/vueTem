@@ -14,7 +14,6 @@ const portfinder = require('portfinder');
 const express = require('express');
 const app = express();
 const gameData = require('../static/data/games.json'); // 加载本地游戏数据
-const slideData = require('../static/data/sliders'); // 引入轮播图数据
 const pageSize = 12; // 定义每次加载数据的条数
 const apiRoutes = express.Router();
 app.use('/api', apiRoutes); // 通过路由请求数据
@@ -52,11 +51,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
 			poll: config.dev.poll,
 		},
 		before(app) {
-			// 读取轮播图
-			app.get('/api/slide', (req, res) => {
-				res.setHeader('Content-type', 'application/json;charset=utf-8');
-				res.end(JSON.stringify(slideData));
-			});
 			// 取得对应栏目下的所有游戏
 			app.get('/api/games', (req, res) => {
 				let gameCategory = req.query.category; // 取得游戏类别

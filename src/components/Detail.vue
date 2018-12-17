@@ -24,12 +24,12 @@
             <div class="page-body">
                 <div class="page-inner">
                     <div class="game-money">
-                        <span class="money-item" v-for="(money, index) in moneyArr" @click.stop="changeMoney($event, index, game.discount)">
+                        <span class="money-item" v-for="(money, index) in moneyArr" @click.stop="changeMoney($event, game.discount, index)">
                             ¥ <i>{{ money }}</i>
                         </span>
                         <span class="money-item" @click.stop="showHideIpt($event)">
                             <b v-show="!shown">其它金额</b>
-                            <input type="number" min="0" max="9" v-show="shown" v-model="moneyIpt" v-focus @keyup.stop="changeMoney($event, index, game.discount, 'money')">
+                            <input type="number" min="0" max="9" v-show="shown" v-model="moneyIpt" v-focus @keyup.stop="changeMoney($event, game.discount, 9, 'money')">
                         </span>
                     </div>
                     <div class="game-pay">
@@ -78,7 +78,7 @@
             this.getGame();
         },
         methods: {
-            changeMoney(e, i, discount, t){
+            changeMoney(e, discount, i, t){
                 let currMoney = document.getElementById('curr_money');
                 let oldMoney = document.getElementById('old_money');
                 let _money = this.moneyIpt;

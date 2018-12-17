@@ -55,8 +55,8 @@
                 }
 
                 let userJson = {'name': name, 'pwd': pwd};
+				let that = this;
                 if(this.userStorage){
-                    let that = this;
                     let isStorage = that.userStorage.some(item => item.name === userJson.name && item.pwd === userJson.pwd);
                     let isSameName = that.userStorage.some(item => item.name === userJson.name && item.pwd !== userJson.pwd);
                     if(isStorage){
@@ -73,7 +73,9 @@
                     that.isLogin = 1;
                     localStorage.setItem('isLogin', '1');
                     localStorage.setItem('currUser', userJson.name);
-                    that.$router.go(-1);
+                    setTimeout(() => {
+						that.$router.go('-1');
+					}, 1200);
                 }else{
                     this.$Layer('注册成功并登录');
                     this.user.push(userJson);
@@ -81,8 +83,9 @@
                     this.isLogin = 1;
                     localStorage.setItem('isLogin', '1');
                     localStorage.setItem('currUser', userJson.name);
-                    this.$router.go(-1);
-                    return false;
+					setTimeout(() => {
+						that.$router.go('-1');
+					}, 1200);
                 }
                 e.preventDefault();
             },
