@@ -29,7 +29,7 @@ vue2 + vue-router + vue-resource + express + webpack + ES6/7 + less
 ```
 git clone https://github.com/hennes1/vueTem.git  
 
-cd vue2-manage  
+cd vueTem  
 
 npm install
 
